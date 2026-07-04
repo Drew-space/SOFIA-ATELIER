@@ -43,23 +43,6 @@ export default function NavbarClient({ links }: { links: NavLink[] }) {
           {/* <button>Search</button> */}
           <button onClick={openCart}>Bag ({totalCount})</button>
         </div>
-        <div className=" md:flex items-center gap-3">
-          <Show when="signed-out">
-            <SignInButton mode="modal">
-              <button className="rounded-full bg-white/20 text-white border border-white/30 px-5 py-2 text-sm font-medium hover:bg-white/30 transition">
-                Sign In
-              </button>
-            </SignInButton>
-            <SignUpButton mode="modal">
-              <button className="rounded-full bg-white text-foreground px-5 py-2 text-sm font-semibold hover:bg-white/90 transition">
-                Sign Up
-              </button>
-            </SignUpButton>
-          </Show>
-          <Show when="signed-in">
-            <UserButton />
-          </Show>
-        </div>
       </nav>
 
       {menuOpen && (
