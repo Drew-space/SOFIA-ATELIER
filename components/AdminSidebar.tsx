@@ -53,11 +53,18 @@ export function AdminSidebar({
             <SidebarMenu>
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild isActive={pathname === item.url}>
+                  {/* <SidebarMenuButton asChild isActive={pathname === item.url}>
                     <Link href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
                     </Link>
+                  </SidebarMenuButton> */}
+                  <SidebarMenuButton
+                    isActive={pathname === item.url}
+                    render={<Link href={item.url} />}
+                  >
+                    <item.icon />
+                    <span>{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

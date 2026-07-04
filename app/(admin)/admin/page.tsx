@@ -157,6 +157,11 @@ export default function AdminDashboardPage() {
                   {/* Three-dot menu */}
                   <div className="absolute top-2 right-2 z-20">
                     <DropdownMenu>
+                      <DropdownMenuTrigger className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/90 shadow-sm hover:bg-white">
+                        <EllipsisVertical className="h-3 w-3 text-gray-700" />
+                      </DropdownMenuTrigger>
+
+                      {/*                       
                       <DropdownMenuTrigger asChild>
                         <Button
                           variant="secondary"
@@ -165,7 +170,7 @@ export default function AdminDashboardPage() {
                         >
                           <EllipsisVertical className="h-3 w-3 text-gray-700" />
                         </Button>
-                      </DropdownMenuTrigger>
+                      </DropdownMenuTrigger> */}
                       <DropdownMenuContent align="end" className="w-44 text-xs">
                         <DropdownMenuItem
                           className="text-xs"
