@@ -112,8 +112,23 @@ export default function NavbarClient({ links }: { links: NavLink[] }) {
 
         <div className="flex items-center gap-4 text-[11px] tracking-widest uppercase font-display">
           <button onClick={openCart}>Bag ({totalCount})</button>
-
           <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button className="font-display tracking-widest text-[10px] uppercase px-2.5 py-1.5 sm:px-4 sm:py-2 border border-black text-black hover:bg-black hover:text-white transition-all duration-300">
+                Sign In
+              </button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button
+                className="hidden sm:block font-display tracking-widest text-[10px] uppercase px-2.5 py-1.5 sm:px-4 sm:py-2 border border-black transition-all duration-300"
+                style={{ background: "var(--black)", color: "var(--white)" }}
+              >
+                Sign Up
+              </button>
+            </SignUpButton>
+          </Show>
+
+          {/* <Show when="signed-out">
             <SignInButton mode="modal">
               <button className="font-display tracking-widest text-[10px] uppercase px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition-all duration-300">
                 Sign In
@@ -127,7 +142,7 @@ export default function NavbarClient({ links }: { links: NavLink[] }) {
                 Sign Up
               </button>
             </SignUpButton>
-          </Show>
+          </Show> */}
 
           <Show when="signed-in">
             <UserButton />
