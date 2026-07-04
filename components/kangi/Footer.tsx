@@ -97,13 +97,13 @@ export default async function Footer() {
 
         <div className="flex items-center gap-5">
           {settings?.email && (
-            <address
+            <a
               href={`mailto:${settings.email}`}
               className="hover:text-white/70 transition-colors flex items-center gap-2"
             >
               <RiMailLine size={16} />
               <span className="hidden sm:inline">{settings.email}</span>
-            </address>
+            </a>
           )}
 
           {settings?.telegramUsername && (
