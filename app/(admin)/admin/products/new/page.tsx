@@ -228,7 +228,7 @@ export default function NewProductPage() {
               <Label className="text-xs">Category *</Label>
               <Select
                 value={form.categoryId}
-                onValueChange={(v) => set("categoryId", v)}
+                onValueChange={(v) => set("categoryId", v ?? "")}
               >
                 <SelectTrigger className="h-9 text-sm">
                   <SelectValue placeholder="Select a category" />
@@ -249,7 +249,10 @@ export default function NewProductPage() {
             </div>
             <div className="flex flex-col gap-1.5">
               <Label className="text-xs">Tag</Label>
-              <Select value={form.tag} onValueChange={(v) => set("tag", v)}>
+              <Select
+                value={form.tag}
+                onValueChange={(v) => set("tag", v ?? "None")}
+              >
                 <SelectTrigger className="h-9 text-sm">
                   <SelectValue />
                 </SelectTrigger>
