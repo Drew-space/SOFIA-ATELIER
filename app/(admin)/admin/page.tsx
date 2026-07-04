@@ -181,7 +181,7 @@ export default function AdminDashboardPage() {
                           Edit product
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />
-                        <AlertDialog>
+                        {/* <AlertDialog>
                           <AlertDialogTrigger asChild>
                             <DropdownMenuItem
                               className="text-xs text-destructive focus:text-destructive"
@@ -190,6 +190,38 @@ export default function AdminDashboardPage() {
                               Delete product
                             </DropdownMenuItem>
                           </AlertDialogTrigger>
+                          <AlertDialogContent>
+                            <AlertDialogHeader>
+                              <AlertDialogTitle>
+                                Delete {product.name}?
+                              </AlertDialogTitle>
+                              <AlertDialogDescription>
+                                This action cannot be undone. The product and
+                                all its images will be permanently deleted.
+                              </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                              <AlertDialogCancel>Cancel</AlertDialogCancel>
+                              <AlertDialogAction
+                                className="bg-destructive text-white hover:bg-destructive/90"
+                                onClick={() => handleDelete(product._id)}
+                              >
+                                Delete
+                              </AlertDialogAction>
+                            </AlertDialogFooter>
+                          </AlertDialogContent>
+                        </AlertDialog> */}
+                        <AlertDialog>
+                          <AlertDialogTrigger
+                            render={
+                              <DropdownMenuItem
+                                className="text-xs text-destructive focus:text-destructive"
+                                onSelect={(e) => e.preventDefault()}
+                              >
+                                Delete product
+                              </DropdownMenuItem>
+                            }
+                          />
                           <AlertDialogContent>
                             <AlertDialogHeader>
                               <AlertDialogTitle>

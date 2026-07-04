@@ -73,7 +73,7 @@ export function AdminSidebar({
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter>
+      {/* <SidebarFooter>
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
@@ -81,6 +81,16 @@ export function AdminSidebar({
                 <Globe className="h-4 w-4" />
                 <span>View Website</span>
               </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
+      </SidebarFooter> */}
+      <SidebarFooter>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton render={<Link href="/" target="_blank" />}>
+              <Globe className="h-4 w-4" />
+              <span>View Website</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
