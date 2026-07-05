@@ -63,15 +63,8 @@ export default function Home() {
             href="mailto:your-email@example.com"
             className="font-medium text-foreground underline underline-offset-2 hover:text-primary"
           >
-            Contact the developer
+            Contact the developer that built it for you
           </a>{" "}
-          or call/WhatsApp{" "}
-          <a
-            href="tel:+2348130079608"
-            className="font-medium text-foreground underline underline-offset-2 hover:text-primary"
-          >
-            0813 007 9608
-          </a>
         </p>
       </div>
     </div>
