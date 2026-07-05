@@ -59,10 +59,7 @@ export default function Home() {
 
         <p className="mt-6 text-xs text-muted-foreground">
           Having trouble or think this is a mistake?{" "}
-          <a
-            href="mailto:your-email@example.com"
-            className="font-medium text-foreground underline underline-offset-2 hover:text-primary"
-          >
+          <a className="font-medium text-foreground underline underline-offset-2 hover:text-primary">
             Contact the developer that built it for you
           </a>{" "}
         </p>
