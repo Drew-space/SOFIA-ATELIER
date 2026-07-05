@@ -32,12 +32,15 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="text-7xl font-bold text-foreground">⏳</h1>
+
         <h2 className="mt-4 text-xl font-semibold text-foreground">
           Your free trial has ended
         </h2>
+
         <p className="mt-2 text-sm text-muted-foreground">
           Subscribe to keep using all features without interruption.
         </p>
+
         <div className="mt-6 flex items-center justify-center gap-3">
           <Link
             href="/pricing"
@@ -45,6 +48,7 @@ export default function Home() {
           >
             Subscribe now
           </Link>
+
           <Link
             href="/"
             className="inline-flex items-center justify-center rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
@@ -52,6 +56,23 @@ export default function Home() {
             Go home
           </Link>
         </div>
+
+        <p className="mt-6 text-xs text-muted-foreground">
+          Having trouble or think this is a mistake?{" "}
+          <a
+            href="mailto:your-email@example.com"
+            className="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+          >
+            Contact the developer
+          </a>{" "}
+          or call/WhatsApp{" "}
+          <a
+            href="tel:+2348130079608"
+            className="font-medium text-foreground underline underline-offset-2 hover:text-primary"
+          >
+            0813 007 9608
+          </a>
+        </p>
       </div>
     </div>
   );
