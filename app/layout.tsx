@@ -4,8 +4,9 @@ import CartDrawer from "@/components/kangi/CartDrawer";
 import { ConvexClientProvider } from "@/providers/ConvexClientProvider";
 import { CartProvider } from "@/providers/CartContext";
 export const metadata: Metadata = {
-  title: "KĀNGI — Modern Streetwear",
-  description: "Exclusive fashion for the discerning.",
+  title: "SOFIA ATELIER — Luxury Fashion House",
+  description:
+    "Discover timeless collections crafted with elegance, precision, and modern sophistication.",
 };
 
 export default function RootLayout({
